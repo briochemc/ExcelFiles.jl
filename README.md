@@ -72,7 +72,7 @@ This will work as long as it is any of the types supported as sources in Iterabl
 ``load`` also support the pipe syntax. For example, to load an Excel file into a ``DataFrame``, one can use the following code:
 
 ````julia
-using ExcelFiles, DataFrame
+using ExcelFiles, DataFrames
 
 df = load("data.xlsx", "Sheet1") |> DataFrame
 ````
@@ -80,7 +80,7 @@ df = load("data.xlsx", "Sheet1") |> DataFrame
 To save an iterable table, one can use the following form:
 
 ````julia
-using ExcelFiles, DataFrame
+using ExcelFiles, DataFrames
 
 df = # Aquire a DataFrame somehow
 
